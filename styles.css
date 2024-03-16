@@ -177,7 +177,7 @@ hr {
 /* Media query for mobile view */
 @media (max-width: 767px) {
    .element {
-      margin-top: 35px;
+      margin-top: 44px;
    }
 }
     
