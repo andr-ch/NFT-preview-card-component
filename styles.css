@@ -1,0 +1,183 @@
+body {
+   /* background-color: rgb(74, 95, 95); */
+    background-color: rgb(13 24 39);
+}
+
+
+h1 {
+    color:whitesmoke;
+    margin-top:23px;
+}
+
+h1:hover {
+    cursor: pointer; /* Pointer/hand icon */
+    color: #57fff9; /* Change the main background color on hover */
+}
+
+
+hr {
+    margin: 7px 17px 17px 1px;
+}
+
+.attribution {
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin-top: 42px;
+    text-align: center;
+}
+
+
+.content {
+   /* background-color: #b3b1b0; */
+    background-color: hsl(215deg 44.66% 15.35%);
+    box-shadow: 1px 12px 0px 10px hsl(217deg 68.15% 5.71%), -1px 12px 0px 30px #121b23;
+    border-radius: 22px;
+    width: 348px;
+    height: 598px;
+}
+
+.content-pic {
+    position: relative;
+    width: 304px;
+    height: 304px;
+    margin-top: 25px;
+    margin-right: 22px;
+    margin-left: 22px;
+    border-radius: 15px;
+    overflow: hidden; /* Ensuring the overlay doesn't overflow */
+}
+
+.content-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 255, 249, 0); /* Transparent initially */
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease; /* Transition opacity and background-color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-overlay::before {
+    content: url('images/icon-view.svg'); /* Adjust the path to your icon */
+    display: none; /* Initially hidden */
+}
+
+.content-pic:hover .image-overlay {
+    opacity: 1; /* Show the icon on hover */
+    background-color: rgba(87, 255, 249, 0.3); /* Transparent overlay color */
+}
+
+.content-pic:hover .image-overlay::before {
+    display: block; /* Show the icon on hover */
+}
+
+.content-pic:hover img {
+    opacity: 0.3; /* Reduce opacity of image on hover */
+}
+
+.content-pic:hover {
+    cursor: pointer; /* Pointer/hand icon */
+    box-shadow: 10px 5px 5px rgb(0, 0, 0);
+    background-color: #57fff9; /* Change the main background color on hover */
+}
+
+.element {
+    display: flex; /* Flexbox layout: Displays children in a flexible container */
+    flex-wrap: wrap; /* Allows wrapping of flex items within the container */
+    justify-content: center; /* Centers flex items along the main axis */
+    margin-top: 131px;
+}
+
+
+.text-area {
+    font-family: "Outfit", sans-serif;
+    width: 303px;
+    height: 218px;
+    margin-left: 22px;
+}
+
+
+
+/*currency-details section*/
+.currency-details {
+    display: flex;
+}
+
+.currency-value {
+    width: 99px;
+    color: #57fff9;
+}
+
+.currency-value img {
+    float: left;
+    margin-right: 9px;
+}
+
+.time-limit {
+    margin-left: 80px;
+    width: 99px;
+    color: hsl(215, 51%, 70%);
+}
+
+.time-limit img {
+    float: left;
+    margin-right: 7px;
+}
+
+
+/*NFT-area section*/
+.NFT-area p {
+    color: hsl(213.24deg 46.84% 69.02%);
+    font-weight: 500;
+    margin-top:13px;
+    line-height: 1.5em;
+}
+
+
+/*profile-details section*/
+.creator-name {
+    color: whitesmoke;
+}
+
+.creator-name:hover {
+    cursor: pointer; /* Pointer/hand icon */
+    color: #57fff9; /* Change the main background color on hover */
+}
+
+.made-by {
+    color:hsl(215, 51%, 70%);
+}
+
+
+.made-by, .creator-name {
+    position: relative;
+    top: 1px;
+    vertical-align: middle;
+}
+
+.profile-details img {
+    float: left;
+    width: 34px;
+    height: 34px;
+    margin-top: -4px;
+    margin-right: 18px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .attribution {
+      display: none; /* Hides the footer */
+    }
+}
