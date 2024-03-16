@@ -174,7 +174,13 @@ hr {
     margin-right: 18px;
 }
 
-
+/* Media query for mobile view */
+@media (max-width: 767px) {
+   .element {
+      margin-top: 30px;
+   }
+}
+    
 
 @media only screen and (max-width: 768px) {
     .attribution {
