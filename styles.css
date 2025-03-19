@@ -27,6 +27,8 @@ hr {
     padding: 20px;
     margin-top: 42px;
     text-align: center;
+    display: none;
+ 
 }
 
 .attribution a { 
